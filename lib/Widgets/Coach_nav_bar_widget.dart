@@ -2,6 +2,8 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:karate/Screens/Coach/Coach_Home.dart';
+import 'package:karate/Screens/Coach/Coach_Upload_Video.dart';
 
 import '../Constants/Colors.dart';
 
@@ -19,11 +21,21 @@ class Coach_Navbar_Widget extends StatelessWidget {
       items: [
         GestureDetector(
           onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CoachHome(),
+                ));
           },
           child: Icon(Icons.sports_kabaddi_rounded),
         ),
         GestureDetector(
           onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CoachUploadVideo(),
+                ));
           },
           child: Icon(Icons.camera_alt_rounded),
         ),

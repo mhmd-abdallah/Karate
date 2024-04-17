@@ -1,10 +1,10 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
 import 'package:karate/Constants/Colors.dart';
 
-class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
-  const AppBarWidget({Key? key}) : super(key: key);
+class TraineeAppbar extends StatelessWidget implements PreferredSizeWidget {
+  const TraineeAppbar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
             alignment: Alignment.centerLeft,
             child: Image.asset(
               'assets/icons/profile-appbar.png',
-              height: 90, // Adjust the height as needed
+              height: 120, 
             ),
           ),
           Expanded(
@@ -32,7 +32,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                 color: Colors.white,
                 child: Text(
                   'Mohammad Abdallah \n        White Belt',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontSize: 20),
                 ),
               ),
             ),
@@ -45,14 +45,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               size: 30,
             ),
           ),
-          GestureDetector(
-            onTap: () {},
-            child: const Icon(
-              Icons.settings,
-              color: Colors.white,
-              size: 30,
-            ),
-          ),
+         
           SizedBox(
             width: 20,
           ),
